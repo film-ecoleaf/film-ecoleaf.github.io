@@ -1,0 +1,830 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #333;
+  font-size: 14px;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+p {
+  line-height: 2;
+}
+
+ul li {
+  list-style: none;
+}
+
+button {
+  border: unset;
+  background-color: unset;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  height: 75px;
+  width: 100%;
+  border-bottom: 1px solid #eaeaea;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background-color: #fff;
+}
+
+header .head-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 1080px;
+  margin: auto;
+  height: 100%;
+}
+
+header .head-container span {
+  position: relative;
+  display: block;
+}
+
+header .head-container span img {
+  position: absolute;
+  top: -5px;
+  left: 0;
+  height: 50px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  z-index: 0;
+}
+
+header .head-container span a {
+  position: relative;
+  font-weight: 800;
+  font-size: 22px;
+  z-index: 2;
+  left: 50px;
+}
+
+header .head-container .nav-area {
+  position: relative;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+header .head-container .nav-area nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header .head-container .nav-area nav ul li {
+  margin: 0px 10px;
+}
+
+header .head-container .nav-area nav ul li a {
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+main .eye-catch {
+  width: 100%;
+  height: 70vh;
+  background-image: url("https://images.pexels.com/photos/269077/pexels-photo-269077.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+  background-position: center;
+}
+
+main .eye-catch .container {
+  width: 1080px;
+  height: 100%;
+  margin: auto;
+  position: relative;
+}
+
+main .eye-catch .container h1 {
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+}
+
+main .eye-catch .container h1 span {
+  display: inline-block;
+  background-color: #fff;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  margin: 10px 0px;
+  padding: 10px;
+}
+
+main section {
+  width: 100%;
+}
+
+main section h1 {
+  font-size: 28px;
+  padding: 50px 0px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 40px;
+  letter-spacing: 5px;
+}
+
+main section .container {
+  min-height: 50vh;
+  width: 1080px;
+  margin: auto;
+  position: relative;
+}
+
+main section.point {
+  background-image: url("https://images.pexels.com/photos/443383/pexels-photo-443383.jpeg?cs=srgb&dl=pexels-sevenstorm-juhaszimrus-443383.jpg&fm=jpg");
+  background-position: center;
+  padding-bottom: 50px;
+}
+
+main section.point h1 {
+  background-color: rgba(0, 0, 0, 0.651);
+  color: #fff;
+  border-bottom: 1px solid;
+}
+
+main section.point .container {
+  border-width: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main section.point .container .point-container {
+  margin: 10px;
+  width: 25vw;
+  min-width: 300px;
+  background-color: #fff;
+  border: 1px solid #eaeaea;
+}
+
+main section.point .container .point-container span.point {
+  display: inline-block;
+  color: #ffff;
+  background-color: #005499;
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+}
+
+main section.point .container .point-container p {
+  padding: 20px;
+  width: 100%;
+}
+
+main section.about {
+  padding: 50px 0px 100px 0px;
+  background-color: #f2f2f2;
+}
+
+main section.about .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main section.about .container .image-wrapper {
+  position: relative;
+  width: 20vw;
+  min-width: 300px;
+  height: 500px;
+  overflow: hidden;
+  text-align: center;
+  -webkit-box-shadow: 50px 50px 1px #005499;
+          box-shadow: 50px 50px 1px #005499;
+}
+
+main section.about .container .image-wrapper img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+main section.about .container .introduce {
+  width: 30vw;
+  min-width: 300px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  background-color: #fff;
+  border: 1px solid #eaeaea;
+  padding: 20px;
+  margin: 3vw;
+}
+
+main section.about .container .introduce p {
+  font-size: 16px;
+  line-height: 2.5;
+}
+
+main section.about .container .introduce p span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+main section.flow h1 span, main section.staff h1 span, main section.law h1 span {
+  font-size: 28px;
+  position: relative;
+}
+
+main section.flow h1 span:before, main section.staff h1 span:before, main section.law h1 span:before {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 4px;
+  width: 75px;
+  background-color: #005499;
+}
+
+main section.flow .container .price-area {
+  padding-bottom: 50px;
+}
+
+main section.flow .container .price-area ul {
+  width: 100%;
+  border: 1px solid #eaeaea;
+}
+
+main section.flow .container .price-area ul li {
+  border-bottom: 1px solid #eaeaea;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main section.flow .container .price-area ul li span {
+  display: inline-block;
+  border-right: 1px solid #eaeaea;
+  height: 100%;
+  padding: 15px;
+  width: 200px;
+}
+
+main section.flow .container .price-area ul li p {
+  padding-left: 15px;
+}
+
+main section.flow .container .price-area ul li p.comment {
+  padding: 15px;
+}
+
+main section.flow .container .price-area ul li:last-child {
+  border-bottom-width: 0px;
+}
+
+main section.flow .container .flow-area ul {
+  margin-top: 25px;
+}
+
+main section.flow .container .flow-area ul li {
+  position: relative;
+  padding-left: 10vw;
+  padding-bottom: 25px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+main section.flow .container .flow-area ul li .step-label {
+  position: absolute;
+  display: block;
+  left: 2vw;
+  top: 0;
+  margin: auto;
+  width: 5vw;
+  height: 5vw;
+  background-color: #005499;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+main section.flow .container .flow-area ul li h2 {
+  position: relative;
+  font-size: 22px;
+  font-weight: 400;
+  padding-bottom: 10px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  z-index: 2;
+}
+
+main section.flow .container .flow-area ul li h2::before {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  content: '';
+  display: block;
+  width: 100%;
+  background-color: #eaff295e;
+  height: 15px;
+  z-index: -1;
+}
+
+main section.flow .container .flow-area ul li p {
+  font-size: 16px;
+  padding: 25px;
+  border-bottom: 2px solid #eaeaea;
+  border-bottom-style: dotted;
+  margin-bottom: 25px;
+}
+
+main section.flow .container .flow-area ul li p span {
+  display: block;
+  font-weight: 600;
+}
+
+main section.flow .container .flow-area ul li::before {
+  content: '';
+  position: absolute;
+  top: 1vw;
+  left: 4.5vw;
+  width: 2px;
+  height: 100%;
+  background-color: #005499;
+}
+
+main section.flow .container .flow-area ul li:last-child::before {
+  content: unset;
+}
+
+main section.staff .container {
+  background-image: url(../images/eco_logo.jpg);
+  background-position-x: 20%;
+  background-repeat: no-repeat;
+  background-size: 300px;
+}
+
+main section.staff .container .image-wrapper {
+  position: relative;
+  width: 90vw;
+  max-width: 500px;
+  margin: auto;
+  height: 300px;
+}
+
+main section.staff .container .image-wrapper img {
+  display: block;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin: auto;
+}
+
+main section.staff .container p {
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+  font-size: 22px;
+  margin-top: 25px;
+}
+
+main section.staff .container .twitter-container {
+  max-width: 500px;
+  width: 95vw;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  margin: auto;
+  border: 1px solid #eaeaea;
+  margin-bottom: 50px;
+}
+
+main section.staff .container .twitter-container p {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+main section.contact h1 {
+  background-color: #005499;
+  color: #fff;
+}
+
+main section.contact .container {
+  min-height: -webkit-max-content;
+  min-height: -moz-max-content;
+  min-height: max-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 50px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main section.contact .container .tel-area {
+  width: 25vw;
+  min-width: 300px;
+  border: 1px solid #005499;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+main section.contact .container .tel-area .head {
+  background-color: #005499;
+  width: 100%;
+}
+
+main section.contact .container .tel-area .head span {
+  display: inline-block;
+  color: #fff;
+  font-weight: 600;
+  padding: 10px;
+  font-size: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+main section.contact .container .tel-area .body {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main section.contact .container .tel-area .body img {
+  height: 70px;
+  padding-right: 10px;
+}
+
+main section.contact .container .tel-area .body p {
+  font-size: 40px;
+  color: #4b4b4b;
+  width: 100%;
+  text-align: center;
+}
+
+main section.contact .container .tel-area p {
+  width: 100%;
+  text-align: center;
+}
+
+main section.contact .container .tel-area .line {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: auto;
+  padding: 10px;
+}
+
+main section.contact .container .cp-area {
+  width: 25vw;
+  min-width: 300px;
+  background-image: url(../images/eco_logo.jpg);
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: 120%;
+}
+
+main section.contact .container .cp-area p.cp-name {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+main section.law {
+  padding-top: 100px;
+  min-height: 100vh;
+}
+
+main section.law ul {
+  width: 100%;
+  border: 1px solid #eaeaea;
+}
+
+main section.law ul li {
+  border-bottom: 1px solid #eaeaea;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main section.law ul li span {
+  display: inline-block;
+  border-right: 1px solid #eaeaea;
+  height: 100%;
+  padding: 15px;
+  width: 200px;
+  font-weight: 500;
+}
+
+main section.law ul li p {
+  padding-left: 15px;
+}
+
+main section.law ul li p.comment {
+  padding: 15px;
+}
+
+main section.law ul li:last-child {
+  border-bottom-width: 0px;
+}
+
+footer {
+  background-color: #333;
+  height: 200px;
+  padding-bottom: 100px;
+}
+
+footer .container {
+  padding: 20px 0px;
+  width: 1080px;
+  margin: auto;
+}
+
+footer .container p {
+  color: #fff;
+  font-size: 12px;
+}
+
+footer .container p a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 767px) {
+  header {
+    height: 60px;
+    width: 100%;
+  }
+  header .head-container {
+    width: 99vw;
+    height: 60px;
+  }
+  header .head-container span img {
+    left: 10px;
+    height: 40px;
+  }
+  header .head-container span a {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 1081px) {
+  * {
+    font-size: 12px;
+  }
+  .pc-only {
+    display: none !important;
+  }
+  main .eye-catch {
+    background-size: cover;
+  }
+  main .eye-catch .container {
+    width: 99vw;
+  }
+  main .eye-catch .container h1 span {
+    font-size: 5vw;
+  }
+  main section h1 {
+    font-size: 5vw;
+    padding: 20px 0px;
+  }
+  main section .container {
+    width: 99vw;
+  }
+  main section.point .container .point-container span.point {
+    font-size: 14px;
+  }
+  main section.about {
+    padding-bottom: 25px;
+  }
+  main section.about .container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main section.about .container .image-wrapper {
+    -webkit-box-shadow: 10px 10px 1px #005499;
+            box-shadow: 10px 10px 1px #005499;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  main section.about .container .introduce {
+    width: 99vw;
+    margin-top: 20px;
+  }
+  main section.about .container .introduce p {
+    font-size: 12px;
+  }
+  main section.about .container .introduce p span {
+    font-size: 15px;
+  }
+  main section.flow h1 span, main section.staff h1 span, main section.law h1 span {
+    font-size: 5vw;
+  }
+  main section.flow .container .flow-area ul li .step-label, main section.staff .container .flow-area ul li .step-label, main section.law .container .flow-area ul li .step-label {
+    width: 60px;
+    height: 60px;
+    top: -20px;
+  }
+  main section.flow .container .flow-area ul li h2, main section.staff .container .flow-area ul li h2, main section.law .container .flow-area ul li h2 {
+    margin-left: 35px;
+    font-size: 15px;
+  }
+  main section.flow .container .flow-area ul li h2::before, main section.staff .container .flow-area ul li h2::before, main section.law .container .flow-area ul li h2::before {
+    height: 10px;
+  }
+  main section.flow .container .flow-area ul li p, main section.staff .container .flow-area ul li p, main section.law .container .flow-area ul li p {
+    font-size: 12px;
+  }
+  main section.flow .container .flow-area ul li:last-child, main section.staff .container .flow-area ul li:last-child, main section.law .container .flow-area ul li:last-child {
+    padding-bottom: 0px;
+  }
+  main section.flow .container .flow-area ul li::before, main section.staff .container .flow-area ul li::before, main section.law .container .flow-area ul li::before {
+    top: 40px;
+    left: 38px;
+  }
+  main section.staff .container {
+    background-image: none;
+  }
+  main section.staff .container .image-wrapper {
+    position: relative;
+    width: 180px;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  main section.staff .container .image-wrapper img {
+    position: relative;
+    height: unset;
+    width: 100%;
+    margin: 0px;
+  }
+  main section.staff .container .image-wrapper .wrapper {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+  }
+  main section.staff .container .image-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    height: 50px;
+    width: 50px;
+    background-color: #005499;
+    -webkit-clip-path: polygon(0 0, 0% 100%, 100% 0);
+            clip-path: polygon(0 0, 0% 100%, 100% 0);
+    z-index: 3;
+  }
+  main section.staff .container .image-wrapper::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: block;
+    height: 50px;
+    width: 50px;
+    background-color: #005499;
+    -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 0);
+            clip-path: polygon(0 100%, 100% 100%, 100% 0);
+    z-index: 3;
+  }
+  main section.staff .container p {
+    margin-bottom: 25px;
+    font-size: 16px;
+  }
+  main section.staff .container .twitter-container p {
+    font-size: 12px;
+  }
+  main section.contact .container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main section.contact .container .tel-area .head span {
+    font-size: 18px;
+  }
+  main section.contact .container .tel-area .body img {
+    height: 50px;
+  }
+  main section.contact .container .tel-area .body p {
+    font-size: 6vw !important;
+    text-decoration: none;
+  }
+  main section.contact .container .tel-area .body p a {
+    font-size: 6vw !important;
+    text-decoration: none;
+  }
+  main section.contact .container .cp-area {
+    background-image: url(../images/eco_logo.jpg);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: 120%;
+  }
+  main section.contact .container .cp-area p.cp-name {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-size: 22px;
+  }
+  main section.law {
+    padding-bottom: 25px;
+  }
+  main section.law .container ul li span {
+    font-size: 3.5vw;
+    width: 33vw;
+  }
+  main section.law .container ul li p {
+    font-size: 3.5vw;
+  }
+}
+
+@media only screen and (max-width: 321px) {
+  main section.flow h1 span:before {
+    bottom: -15px;
+    height: 3px;
+    width: 50px;
+  }
+  main section.flow .container .flow-area ul li .step-label {
+    width: 60px;
+    height: 60px;
+    top: -20px;
+  }
+  main section.flow .container .flow-area ul li::before {
+    top: 40px;
+    left: 35px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  footer .container {
+    width: 85vw;
+  }
+}
+/*# sourceMappingURL=style.css.map */

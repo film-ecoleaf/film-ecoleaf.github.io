@@ -1,0 +1,32 @@
+@import 'variable';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: $default-font-color;
+    font-size: $default-font-size;
+    font-family: $font-g;
+}
+p {
+    line-height: 2;
+}
+ul {
+    li {
+        list-style: none;
+    }
+}
+button {
+    border: unset;
+    background-color: unset;
+}
+a {
+    text-decoration: none;
+}
+
+@import 'header';
+@import 'main';
+@import 'footer';
+@import 'header-mobile';
+@import 'main-mobile';
+@import 'footer-mobile';

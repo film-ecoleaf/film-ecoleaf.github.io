@@ -1,0 +1,38 @@
+@media only screen and (max-width: 1081px) {
+
+}
+@media only screen and (max-width: 769px) {
+
+}
+@media only screen and (max-width: 767px) {
+    header {
+        height: 60px;
+        width: 100%;
+        .head-container {
+            width: 99vw;
+            height: 60px;
+            span {
+                img {
+                    left: 10px;
+                    height: 40px;
+                }
+                a {
+                    font-size: 16px;
+                }
+            }
+            .nav-area {
+                nav {
+                    ul {
+                        li {
+                            a {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 321px) {
+
+}

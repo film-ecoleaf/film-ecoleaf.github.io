@@ -1,0 +1,239 @@
+@import 'variable';
+@media only screen and (max-width: 1081px) {
+
+    * {
+        font-size: 12px;
+    }
+    .pc-only {
+        display: none !important;
+    }
+    main {
+        .eye-catch {
+            background-size: cover;
+            .container {
+                width: 99vw;
+                h1 {
+                    span {
+                        font-size: 5vw;
+                    }
+                }
+            }
+        }
+        section {
+            h1 {
+                font-size: 5vw;
+                padding: 20px 0px;
+            }
+            .container {
+                width: 99vw;
+            }
+        }
+        section.point {
+            .container {
+                .point-container {
+                    span.point {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+        section.about {
+            padding-bottom: 25px;
+            .container {
+                justify-content: center;
+                .image-wrapper {
+                    box-shadow: 10px 10px 1px $theme-color;
+                    height: max-content;
+                }
+                .introduce {
+                    width: 99vw;
+                    margin-top: 20px;
+                    p {
+                        font-size: 12px;
+                        span {
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+        section.flow,section.staff,section.law {
+            h1 {
+                span {
+                    font-size: 5vw;;
+                }
+            }
+            .container {
+                .flow-area {
+                    ul {
+                        li {
+                            .step-label {
+                                width: 60px;
+                                height: 60px;
+                                top: -20px;
+                            }
+                            h2 {
+                                margin-left: 35px;
+                                font-size: 15px;
+                                &::before {
+                                    height: 10px;
+                                }
+                            }
+                            p {
+                                font-size: 12px;
+                                span {
+                                }
+                            }
+                            &:last-child {
+                                padding-bottom: 0px;
+                            }
+                        }
+                        li::before {
+                            top: 40px;
+                            left: 38px;
+                        }
+                    }
+                }
+            }
+        }
+        section.staff {
+            .container {
+                background-image: none;
+                .image-wrapper {
+                    position: relative;
+                    width: 180px;
+                    height: max-content;
+                    img {
+                        position: relative;
+                        height: unset;
+                        width: 100%;
+                        margin: 0px;
+                    }
+                    .wrapper {
+                        position: absolute;
+                        top: 0;
+                        height: 100%;
+                        width: 100%;
+                        z-index: 2;
+                    }
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        display: block;
+                        height: 50px;
+                        width: 50px;
+                        background-color: $theme-color;
+                        clip-path: polygon(0 0, 0% 100%, 100% 0);
+                        z-index:3;
+                    }
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        bottom: 0;
+                        right: 0;
+                        display: block;
+                        height: 50px;
+                        width: 50px;
+                        background-color: $theme-color;
+                        clip-path: polygon(0 100%, 100% 100%, 100% 0);
+                        z-index:3;
+                    }
+                }
+                p {
+                    margin-bottom: 25px;
+                    font-size: 16px;
+                }
+                .twitter-container {
+                    p {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+        section.contact {
+            .container {
+                justify-content: center;
+                .tel-area {
+                    .head {
+                        span {
+                            font-size: 18px;
+                        }
+                    }
+                    .body {
+                        img {
+                            height: 50px;
+                        }
+                        p {
+                            font-size: 6vw !important;
+                            text-decoration: none;
+                            a {
+                                font-size: 6vw !important;
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+                .cp-area {
+                    background-image: url(../images/eco_logo.jpg);
+                    background-size: 50%;
+                    background-repeat: no-repeat;
+                    background-position-x: right;
+                    background-position-y: 120%;
+                    p.cp-name {
+                        margin-top: 10px;
+                        margin-bottom: 0px;
+                        font-size: 22px;
+                    }
+                }
+            }
+        }
+        section.law {
+            padding-bottom: 25px;
+            .container {
+                ul {
+                    li {
+                        span {
+                            font-size: 3.5vw;
+                            width: 33vw;
+                        }
+                        p {
+                            font-size: 3.5vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 321px) {
+    main {
+        section.flow {
+            h1 {
+                span:before {
+                    bottom: -15px;
+                    height: 3px;
+                    width: 50px;
+                }
+            }
+            .container {
+                .flow-area {
+                    ul {
+                        li {
+                            .step-label {
+                                width: 60px;
+                                height: 60px;
+                                top: -20px;
+                            }
+                        }
+                        li::before {
+                            top: 40px;
+                            left: 35px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
